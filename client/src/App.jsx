@@ -1,10 +1,15 @@
+import GetActivity from "./components/GetActivity";
+
 const App = () => {
-  return ( 
-    <div className="text-blue-700">
-      We are good this time
+  return (
+    
+    <div>
+      <GetActivity/>
     </div>
-   );
+
+  
+
+  );
 }
  
 export default App;
- 
