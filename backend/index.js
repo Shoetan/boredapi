@@ -1,22 +1,20 @@
  const express = require('express');
  const app = express()
  const axios = require('axios');
- require("dotenv").config();
-
  const port = 8080
 
 let data
 
  const getUser = async () =>{
+
     const config = {
-        method: 'GET',
-        url: `https://api.nasa.gov/planetary/apod`,
-        params: {
-            api_key: process.env.NASA_API_KEY,
-        }
+        method : 'GET',
+        url : 'http://www.boredapi.com/api/activity/'
+
     }
+ 
      try {
-        const res = await axios (config)
+        const res = await axios.request(config)
         data = res.data
         console.log(data);
      } catch (error) {
@@ -37,3 +35,4 @@ let data
  app.listen(port, () =>{
      console.log(`Server listening on ${port}`);
  })
+
