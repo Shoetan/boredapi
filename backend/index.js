@@ -1,9 +1,13 @@
  const express = require('express');
  const app = express()
+ const cors = require('cors');
  const axios = require('axios');
  const port = 8080
 
-let data
+ let data
+
+
+app.use(cors())
 
  const getUser = async () =>{
 
