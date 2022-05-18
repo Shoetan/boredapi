@@ -24,6 +24,8 @@ app.use(cors())
      } catch (error) {
          console.log(error);
      }
+
+     setTimeout(getUser, 500)
      
  }
 
