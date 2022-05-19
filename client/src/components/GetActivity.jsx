@@ -20,13 +20,13 @@ const GetActivity = () => {
   }
     return ( 
         <div>
-            <h1 className=" font-poppins font-semibold text-zinc-900 w-96 mx-auto flex justify-center items-center mt-6 ">Bored? I'll suggest something</h1>
-            <div className="w-96 mx-auto bg-teal-200 flex flex-col justify-around items-center mt-6 sm:flex-row gap-6">
-                <p>
+            <h1 className=" font-poppins  text-2xl   font-semibold text-zinc-900 w-96 mx-auto flex justify-center items-center mt-6 ">Bored? I'll suggest something</h1>
+            <div className="w-96 mx-auto bg-teal-200 flex justify-center items-center mt-12">
+                <p className="font-poppins text-xl p-2">
                   {activity}
                 </p>
             </div>
-            <button onClick={getActivity}>Click me</button>
+            <button className="font-poppins text-lg flex w-96 justify-center items-center" onClick={getActivity}>Click me</button>
            
         </div>
      );
